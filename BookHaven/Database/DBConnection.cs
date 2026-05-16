@@ -10,7 +10,7 @@ namespace BookHaven.Database
     public class DBConnection
     {
         // Database Connection String
-        public static string ConnectionString = @"Data Source=Dulangi\SQLEXPRESS;Initial Catalog=BookHavenDB;Integrated Security=True;Trust Server Certificate=True";
+        public static string ConnectionString = @"Data Source=Dulangi\SQLEXPRESS;Initial Catalog=BookHavenDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
 
         // Create and return a new SQL Connection
         public static SqlConnection GetConnection()

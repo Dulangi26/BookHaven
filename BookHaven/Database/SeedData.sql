@@ -37,3 +37,13 @@ INSERT INTO Orders (CustomerId, BookId, Quantity, OrderStatus)
 VALUES
 (1, 1, 2, 'Completed'),
 (2, 3, 1, 'Pending');
+
+
+--SaleDetails
+INSERT INTO SaleDetails (SaleID, BookID, Quantity, TotalPrice)
+VALUES
+-- Sale 1 (John Silva)
+(1, 1, 2, 3000.00),
+
+-- Sale 2 (Nimal Perera)
+(2, 3, 1, 4500.00);

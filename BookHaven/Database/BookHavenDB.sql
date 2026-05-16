@@ -65,3 +65,30 @@ CREATE TABLE Orders (
     FOREIGN KEY (CustomerId) REFERENCES Customers(CustomerId),
     FOREIGN KEY (BookId) REFERENCES Books(BookId)
 );
+
+--Suppliers Table
+CREATE TABLE SaleDetails (
+    SaleDetailID INT IDENTITY(1,1) PRIMARY KEY,
+    SaleID INT NOT NULL,
+    BookID INT NOT NULL,
+    Quantity INT NOT NULL,
+    TotalPrice DECIMAL(10,2) NOT NULL,
+
+    FOREIGN KEY (SaleID) REFERENCES Sales(SaleID),
+    FOREIGN KEY (BookID) REFERENCES Books(BookID)
+);
+
+-- Payments Table
+
+CREATE TABLE Payment (
+    PaymentID INT IDENTITY(1,1) PRIMARY KEY,
+    SaleID INT NOT NULL,
+    CustomerID INT NOT NULL,
+    PaymentDate DATETIME DEFAULT GETDATE(),
+    PaymentMethod NVARCHAR(50),
+    Amount DECIMAL(10,2),
+    PaymentStatus NVARCHAR(50),
+
+    FOREIGN KEY (SaleID) REFERENCES Sales(SaleID),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID)
+);

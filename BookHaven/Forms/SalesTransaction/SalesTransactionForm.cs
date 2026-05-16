@@ -16,7 +16,7 @@ namespace BookHaven.Forms.SalesTransaction
 {
     public partial class SalesTransactionForm : Form
     {
-        private string connectionString = @"Server=DULANGI;Database=BookHavenDB;Trusted_Connection=True;TrustServerCertificate=true;";
+        private string connectionString = @"Data Source=Dulangi\SQLEXPRESS;Initial Catalog=BookHavenDB;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
         public SalesTransactionForm()
         {
             InitializeComponent();

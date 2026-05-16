@@ -41,7 +41,7 @@
             // 
             // btnback
             // 
-            btnback.Location = new Point(25, 478);
+            btnback.Location = new Point(180, 673);
             btnback.Name = "btnback";
             btnback.Size = new Size(94, 29);
             btnback.TabIndex = 19;
@@ -51,7 +51,7 @@
             // 
             // btnExit
             // 
-            btnExit.Location = new Point(618, 478);
+            btnExit.Location = new Point(773, 673);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(94, 29);
             btnExit.TabIndex = 18;
@@ -63,7 +63,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(271, 20);
+            label1.Location = new Point(469, 20);
             label1.Name = "label1";
             label1.Size = new Size(173, 28);
             label1.TabIndex = 17;
@@ -72,7 +72,7 @@
             // btnRefresh
             // 
             btnRefresh.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnRefresh.Location = new Point(301, 442);
+            btnRefresh.Location = new Point(456, 637);
             btnRefresh.Name = "btnRefresh";
             btnRefresh.Size = new Size(110, 37);
             btnRefresh.TabIndex = 16;
@@ -87,7 +87,7 @@
             dgvCustomerReport.Location = new Point(12, 98);
             dgvCustomerReport.Name = "dgvCustomerReport";
             dgvCustomerReport.RowHeadersWidth = 51;
-            dgvCustomerReport.Size = new Size(700, 338);
+            dgvCustomerReport.Size = new Size(1134, 533);
             dgvCustomerReport.TabIndex = 15;
             // 
             // txtSearch
@@ -121,7 +121,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(724, 526);
+            ClientSize = new Size(1158, 714);
             Controls.Add(btnClearSearch);
             Controls.Add(btnSearch);
             Controls.Add(txtSearch);
